@@ -27,6 +27,15 @@ print("url:{0},类型是{1}".format((sheet.cell(1,2).value),type(sheet.cell(1,2)
 print("url:{0},类型是{1}".format((sheet.cell(1,3).value),type(sheet.cell(1,3).value)))
 print("url:{0},类型是{1}".format((sheet.cell(1,4).value),type(sheet.cell(1,4).value)))
 
+#eval()  #把数据类 转化成 原本的数据类型
+s = 'True'
+print(eval(s),type(eval(s)))
+
+a = '{"age":18}'
+print(a,type(a))
+print(eval(a),type(eval(a)))
+
+
 #homework
 #数据参数化，存到excel里，利用openpyxl写一个专门读取excel里面测试数据的类
 # 通过初始化传参的方法，完成单元测试
